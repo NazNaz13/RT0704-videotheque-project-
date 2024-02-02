@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+  server:
+    build:
+      context: ./server
+    volumes:
+      - './server:/app'
+    ports:
+      - "5050:5050"
+
+  api:
+    build:
+      context: ./API
+    volumes:
+      - './API:/app'
+    ports:
+      - "5051:5051"

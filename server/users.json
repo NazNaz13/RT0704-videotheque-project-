@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "username": "toto1",
+    "password": "password1",
+    "email": "toto1@example.com"
+  },
+  {
+    "id": 2,
+    "username": "toto2",
+    "password": "password2",
+    "email": "toto2@example.com"
+  },
+  {
+    "id": 3,
+    "username": "toto3",
+    "password": "password3",
+    "email": "toto3@example.com"
+  },
+  {
+    "username": "naz",
+    "password": "naz"
+  },
+  {
+    "id": 5,
+    "username": "naziiiiiiim",
+    "password": "naziiiimm",
+    "email": "nazim@gmail.com"
+  },
+  {
+    "id": 6,
+    "username": "nazim1",
+    "password": "password1",
+    "email": "nazim1@gmail.com"
+  },
+  {
+    "id": 7,
+    "username": "TOTO1",
+    "password": "PASSWORD1",
+    "email": "TOTO@gmail.com"
+  },
+  {
+    "id": 8,
+    "username": "TATA1",
+    "password": "PASSWORD1",
+    "email": "tata@gmail.com"
+  },
+  {
+    "id": 9,
+    "username": "TOTO20",
+    "password": "password20",
+    "email": "toto@gmail.com"
+  }
+]

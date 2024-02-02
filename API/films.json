@@ -1,0 +1,703 @@
+[
+  {
+    "id": 1,
+    "title": "Reptile",
+    "genre": "Drame",
+    "year": 2023,
+    "poster": "https://xl.movieposterdb.com/23_09/2023/13274016/xl_reptile-movie-poster_e464f1fe.jpg?v=2023-10-31%2012:03:23",
+    "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+    "rating": 7.9,
+    "ratings": []
+  },
+  {
+    "id": 2,
+    "title": "The Shawshank Redemption",
+    "genre": "Drame",
+    "year": 1994,
+    "poster": "https://xl.movieposterdb.com/05_03/1994/0111161/xl_8494_0111161_3bb8e662.jpg?v=2024-01-25%2007:16:39",
+    "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+    "rating": 9.3,
+    "ratings": []
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "genre": "Action, Crime, Drame",
+    "year": 2008,
+    "poster": "https://xl.movieposterdb.com/08_05/2008/468569/xl_468569_f0e2cd63.jpg?v=2024-01-16%2022:13:29",
+    "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+    "rating": 9.0,
+    "ratings": []
+  },
+  {
+    "id": 4,
+    "title": "Inception",
+    "genre": "Action, Aventure, Sci-Fi",
+    "year": 2010,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=8hP9D6kZseM",
+    "rating": 8.8,
+    "ratings": []
+  },
+  {
+    "id": 5,
+    "title": "Forrest Gump",
+    "genre": "Drame, Romance",
+    "year": 1994,
+    "poster": "https://xl.movieposterdb.com/12_04/1994/109830/xl_109830_58524cd6.jpg?v=2023-11-04%2006:13:49",
+    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
+    "rating": 8.8,
+    "ratings": []
+  },
+  {
+    "id": 6,
+    "title": "The Matrix",
+    "genre": "Action, Sci-Fi",
+    "year": 1999,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+    "rating": 8.7,
+    "ratings": []
+  },
+  {
+    "id": 7,
+    "title": "The Godfather",
+    "genre": "Crime, Drame",
+    "year": 1972,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+    "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
+    "rating": 9.2,
+    "ratings": []
+  },
+  {
+    "id": 8,
+    "title": "Fight Club",
+    "genre": "Drame",
+    "year": 1999,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
+    "rating": 8.8,
+    "ratings": []
+  },
+  {
+    "id": 9,
+    "title": "Schindler's List",
+    "genre": "Biographie, Drame, Histoire",
+    "year": 1993,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg",
+    "trailer": "https://www.youtube.com/watch?v=gG22XNhtnoY",
+    "rating": 8.9,
+    "ratings": []
+  },
+  {
+    "id": 10,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genre": "Aventure, Drame, Fantaisie",
+    "year": 2001,
+    "poster": "https://xl.movieposterdb.com/22_11/2002/311455/xl_the-lord-of-the-rings-the-fellowship-of-the-ring-movie-poster_5fffe8dc.jpg?v=2022-11-28%2009:08:20",
+    "trailer": "https://www.youtube.com/watch?v=V75dMMIW2B4",
+    "rating": 8.8,
+    "ratings": []
+  },
+  {
+    "id": 11,
+    "title": "Goodfellas",
+    "genre": "Biographie, Crime, Drame",
+    "year": 1990,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/7/7b/Goodfellas.jpg",
+    "trailer": "https://www.youtube.com/watch?v=qo5jJpHtI1Y",
+    "rating": 8.7,
+    "ratings": []
+  },
+  {
+    "id": 12,
+    "title": "The Silence of the Lambs",
+    "genre": "Crime, Drame, Thriller",
+    "year": 1991,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/8/86/The_Silence_of_the_Lambs_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=W6Mm8Sbe__o",
+    "rating": 8.6,
+    "ratings": []
+  },
+  {
+    "id": 13,
+    "title": "The Usual Suspects",
+    "genre": "Crime, Drame, Myst\u00e8re",
+    "year": 1995,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/9/9c/Usual_suspects_ver1.jpg",
+    "trailer": "https://www.youtube.com/watch?v=oiXdPolca5w",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 14,
+    "title": "Se7en",
+    "genre": "Crime, Drame, Myst\u00e8re",
+    "year": 1995,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=znmZoVkCjpI",
+    "rating": 8.6,
+    "ratings": []
+  },
+  {
+    "id": 15,
+    "title": "The Pianist",
+    "genre": "Biographie, Drame, Guerre",
+    "year": 2002,
+    "poster": "https://xl.movieposterdb.com/09_06/1991/102663/xl_102663_16172472.jpg",
+    "trailer": "https://www.youtube.com/watch?v=BFwGqLa_oAo",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 16,
+    "title": "City of God",
+    "genre": "Crime, Drame",
+    "year": 2002,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/1/10/CidadedeDeus.jpg",
+    "trailer": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
+    "rating": 8.6,
+    "ratings": []
+  },
+  {
+    "id": 17,
+    "title": "The Departed",
+    "genre": "Crime, Drame, Thriller",
+    "year": 2006,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/5/50/Departed234.jpg",
+    "trailer": "https://www.youtube.com/watch?v=auYbpnEwBBg",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 18,
+    "title": "The Green Mile",
+    "genre": "Crime, Drame, Fantaisie",
+    "year": 1999,
+    "poster": "https://xl.movieposterdb.com/05_07/1999/0120689/xl_34970_0120689_e3f4a87d.jpg?v=2023-12-02%2004:16:22",
+    "trailer": "https://www.youtube.com/watch?v=ctRK-4Vt7dA",
+    "rating": 8.6,
+    "ratings": []
+  },
+  {
+    "id": 19,
+    "title": "Gladiator",
+    "genre": "Action, Aventure, Drame",
+    "year": 2000,
+    "poster": "https://xl.movieposterdb.com/08_12/2000/172495/xl_172495_93f99923.jpg?v=2024-01-04%2004:49:17",
+    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 20,
+    "title": "The Intouchables",
+    "genre": "Biographie, Com\u00e9die, Drame",
+    "year": 2011,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/9/93/The_Intouchables.jpg",
+    "trailer": "https://www.youtube.com/watch?v=34WIbmXkewU",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 21,
+    "title": "The Prestige",
+    "genre": "Drame, Myst\u00e8re, Sci-Fi",
+    "year": 2006,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=o4gHCmTQDVI",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 22,
+    "title": "The Lion King",
+    "genre": "Animation, Aventure, Drame",
+    "year": 1994,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+    "trailer": "https://www.youtube.com/watch?v=4sj1MT05lAA",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 23,
+    "title": "Casablanca",
+    "genre": "Drame, Romantique, Guerre",
+    "year": 1942,
+    "poster": "https://xl.movieposterdb.com/08_01/2004/381077/xl_381077_f5bbbbc7.jpg",
+    "trailer": "https://www.youtube.com/watch?v=BkL9l7qovsE",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 24,
+    "title": "The Godfather: Part II",
+    "genre": "Crime, Drame",
+    "year": 1974,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg",
+    "trailer": "https://www.youtube.com/watch?v=qJr92K_hKl0",
+    "rating": 9.0,
+    "ratings": []
+  },
+  {
+    "id": 25,
+    "title": "Dune",
+    "genre": "Action, Aventure, Drame",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/23_01/1992/1461676/xl_dune-movie-poster_b8a9eb4b.jpg?v=2023-01-05%2022:57:54",
+    "trailer": "https://www.youtube.com/watch?v=n9xhJrPXop4",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 26,
+    "title": "No Time to Die",
+    "genre": "Action, Aventure, Thriller",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/2382320/xl_2382320_5636ee3a.jpg?v=2023-12-10%2004:46:38",
+    "trailer": "https://www.youtube.com/watch?v=BIhNsAtPbPI",
+    "rating": 7.5,
+    "ratings": []
+  },
+  {
+    "id": 27,
+    "title": "The French Dispatch",
+    "genre": "Com\u00e9die, Drame, Romance",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_11/2020/8847712/xl_8847712_bffc0dd6.jpg?v=2023-10-23%2019:20:46",
+    "trailer": "https://www.youtube.com/watch?v=TcPk2p0Zaw4",
+    "rating": 7.8,
+    "ratings": []
+  },
+  {
+    "id": 28,
+    "title": "Spider-Man: No Way Home",
+    "genre": "Action, Aventure, Fantaisie",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_12/2021/10872600/xl_10872600_c809b67f.jpg?v=2024-01-20%2011:15:21",
+    "trailer": "https://www.youtube.com/watch?v=rt-2cxAiPJk",
+    "rating": 8.5,
+    "ratings": []
+  },
+  {
+    "id": 29,
+    "title": "The Power of the Dog",
+    "genre": "Drame, Myst\u00e8re, Western",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_12/2020/10293406/xl_10293406_76970666.jpg?v=2023-06-03%2000:05:31",
+    "trailer": "https://www.youtube.com/watch?v=Y5w8fV8XXd8",
+    "rating": 7.8,
+    "ratings": []
+  },
+  {
+    "id": 30,
+    "title": "A Quiet Place Part II",
+    "genre": "Drame, Horreur, Sci-Fi",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_06/2020/8332922/xl_8332922_00d7b5d1.jpg?v=2023-12-05%2015:49:00",
+    "trailer": "https://www.youtube.com/watch?v=XEMwSdne6UE",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 31,
+    "title": "The Green Knight",
+    "genre": "Aventure, Drame, Fantaisie",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_06/2020/9243804/xl_9243804_706f2278.jpg?v=2023-11-11%2013:15:37",
+    "trailer": "https://www.youtube.com/watch?v=VoJc2tH3WBw",
+    "rating": 6.7,
+    "ratings": []
+  },
+  {
+    "id": 32,
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "genre": "Action, Aventure, Fantaisie",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/22_06/2021/9376612/xl_9376612_78fc9825.jpg?v=2023-12-26%2017:23:29",
+    "trailer": "https://www.youtube.com/watch?v=8YjFbMbfXaQ",
+    "rating": 7.9,
+    "ratings": []
+  },
+  {
+    "id": 33,
+    "title": "The Suicide Squad",
+    "genre": "Action, Aventure, Com\u00e9die",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_06/2021/6334354/xl_6334354_bece6685.jpg?v=2024-01-06%2020:28:05",
+    "trailer": "https://www.youtube.com/watch?v=eg5ciqQzmK0",
+    "rating": 7.3,
+    "ratings": []
+  },
+  {
+    "id": 34,
+    "title": "Luca",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_06/2021/12801262/xl_12801262_f68f3d4e.jpg?v=2023-12-27%2021:22:38",
+    "trailer": "https://www.youtube.com/watch?v=mYfJxlgR2jw",
+    "rating": 7.5,
+    "ratings": []
+  },
+  {
+    "id": 35,
+    "title": "Cruella",
+    "genre": "Com\u00e9die, Crime",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_05/2021/3228774/xl_3228774_3373c787.jpg?v=2023-03-28%2021:14:16",
+    "trailer": "https://www.youtube.com/watch?v=gmRKv7n2If8",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 36,
+    "title": "Jungle Cruise",
+    "genre": "Action, Aventure, Com\u00e9die",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_07/2020/870154/xl_870154_a81c4d7a.jpg?v=2023-12-26%2020:31:19",
+    "trailer": "https://www.youtube.com/watch?v=f_HvoipFcA8",
+    "rating": 6.7,
+    "ratings": []
+  },
+  {
+    "id": 37,
+    "title": "Free Guy",
+    "genre": "Action, Aventure, Com\u00e9die",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/21_09/2020/6264654/xl_6264654_ba6741d2.jpg?v=2023-12-08%2016:22:05",
+    "trailer": "https://www.youtube.com/watch?v=X2m-08cOAbc",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 38,
+    "title": "The Mitchells vs. the Machines",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/22_02/2021/7979580/xl_7979580_a831511f.jpg?v=2023-11-16%2010:20:58",
+    "trailer": "https://www.youtube.com/watch?v=HwRHFhNXLiM",
+    "rating": 7.7,
+    "ratings": []
+  },
+  {
+    "id": 39,
+    "title": "Black Widow",
+    "genre": "Action, Aventure, Sci-Fi",
+    "year": 2021,
+    "poster": "https://xl.movieposterdb.com/22_07/2021/12204958/xl_12204958_1234c2a2.jpg?v=2023-12-26%2017:22:57",
+    "trailer": "https://www.youtube.com/watch?v=Fp9pNPdNwjI",
+    "rating": 6.8,
+    "ratings": []
+  },
+  {
+    "id": 40,
+    "title": "Nomadland",
+    "genre": "Drame",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/23_01/2020/9770150/xl_nomadland-movie-poster_23593737.jpg?v=2023-01-31%2014:01:27",
+    "trailer": "https://www.youtube.com/watch?v=6sxCFZ8_d84",
+    "rating": 7.3,
+    "ratings": []
+  },
+  {
+    "id": 41,
+    "title": "Soul",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/2948372/xl_2948372_2699e5c2.jpg?v=2023-12-08%2016:22:52",
+    "trailer": "https://www.youtube.com/watch?v=xOsLIiBStEs",
+    "rating": 8.1,
+    "ratings": []
+  },
+  {
+    "id": 42,
+    "title": "Tenet",
+    "genre": "Action, Sci-Fi, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_09/2020/6723592/xl_6723592_46561c38.jpg?v=2023-12-31%2009:38:41",
+    "trailer": "https://www.youtube.com/watch?v=L3pk_TBkihU",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 43,
+    "title": "Mank",
+    "genre": "Biographie, Drame",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_06/2020/10618286/xl_10618286_b3cb0f9d.jpg?v=2023-02-25%2012:15:34",
+    "trailer": "https://www.youtube.com/watch?v=6_2aW_u1RSc",
+    "rating": 7.0,
+    "ratings": []
+  },
+  {
+    "id": 44,
+    "title": "The Invisible Man",
+    "genre": "Horreur, Myst\u00e8re, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/19_12/2017/7651078/xl_7651078_3f05bb43.jpg?v=2022-01-04%2015:25:08",
+    "trailer": "https://www.youtube.com/watch?v=WO_FJdiY9dA",
+    "rating": 7.1,
+    "ratings": []
+  },
+  {
+    "id": 45,
+    "title": "The Trial of the Chicago 7",
+    "genre": "Drame, Histoire, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_08/2020/1070874/xl_1070874_24ec2584.jpg?v=2023-06-03%2001:06:08",
+    "trailer": "https://www.youtube.com/watch?v=FVb6EdKDBfU",
+    "rating": 7.8,
+    "ratings": []
+  },
+  {
+    "id": 46,
+    "title": "Palm Springs",
+    "genre": "Com\u00e9die, Romance, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_01/2019/8751928/xl_8751928_7efbe514.jpg?v=2022-01-04%2021:26:22",
+    "trailer": "https://www.youtube.com/watch?v=0Uq_5bYGYfM",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 47,
+    "title": "Soul",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/19_12/2017/7320478/xl_7320478_ed004f03.jpg?v=2022-01-04%2015:33:37",
+    "trailer": "https://www.youtube.com/watch?v=xOsLIiBStEs",
+    "rating": 8.1,
+    "ratings": []
+  },
+  {
+    "id": 48,
+    "title": "Promising Young Woman",
+    "genre": "Crime, Drame, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/13_05/2009/1380891/xl_1380891_bc989dc3.jpg",
+    "trailer": "https://www.youtube.com/watch?v=7i5kiFDunk8",
+    "rating": 7.4,
+    "ratings": []
+  },
+  {
+    "id": 49,
+    "title": "Ma Rainey's Black Bottom",
+    "genre": "Drame, Musique",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/22_07/2021/10156586/xl_10156586_a426b495.jpg?v=2022-07-12%2010:42:59",
+    "trailer": "https://www.youtube.com/watch?v=ord7gP151vk",
+    "rating": 7.0,
+    "ratings": []
+  },
+  {
+    "id": 50,
+    "title": "Mulan",
+    "genre": "Action, Aventure, Drame",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/4566758/xl_4566758_5b2058ef.jpg?v=2023-02-26%2012:30:18",
+    "trailer": "https://www.youtube.com/watch?v=KK8FHdFluOQ",
+    "rating": 5.7,
+    "ratings": []
+  },
+  {
+    "id": 51,
+    "title": "Wonder Woman 1984",
+    "genre": "Action, Aventure, Fantaisie",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_01/2019/8752498/xl_8752498_0c7bb661.jpg?v=2022-01-04%2021:29:38",
+    "trailer": "https://www.youtube.com/watch?v=sfM7_JLk-84",
+    "rating": 5.4
+  },
+  {
+    "id": 52,
+    "title": "Borat Subsequent Moviefilm",
+    "genre": "Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/07_10/2006/443453/xl_443453_7ea199e5.jpg?v=2023-11-07%2013:04:28",
+    "trailer": "https://www.youtube.com/watch?v=UAPW9ediXKQ",
+    "rating": 6.7
+  },
+  {
+    "id": 53,
+    "title": "The Midnight Sky",
+    "genre": "Drame, Fantaisie, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_11/2020/10539608/xl_10539608_aea95a65.jpg?v=2023-06-15%2014:13:53",
+    "trailer": "https://www.youtube.com/watch?v=ISwftKPPkps",
+    "rating": 5.6
+  },
+  {
+    "id": 54,
+    "title": "Tenet",
+    "genre": "Action, Sci-Fi, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_09/2020/6723592/xl_6723592_46561c38.jpg?v=2023-12-31%2009:38:41",
+    "trailer": "https://www.youtube.com/watch?v=L3pk_TBkihU",
+    "rating": 7.4
+  },
+  {
+    "id": 55,
+    "title": "Soul",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/2948372/xl_2948372_2699e5c2.jpg?v=2023-12-08%2016:22:52",
+    "trailer": "https://www.youtube.com/watch?v=xOsLIiBStEs",
+    "rating": 8.1
+  },
+  {
+    "id": 56,
+    "title": "Palm Springs",
+    "genre": "Com\u00e9die, Romance, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_12/2019/9484998/xl_9484998_650d2ffa.jpg?v=2022-07-28%2012:59:54",
+    "trailer": "https://www.youtube.com/watch?v=0Uq_5bYGYfM",
+    "rating": 7.4
+  },
+  {
+    "id": 57,
+    "title": "Soul",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/2948372/xl_2948372_2699e5c2.jpg?v=2023-12-08%2016:22:52",
+    "trailer": "https://www.youtube.com/watch?v=xOsLIiBStEs",
+    "rating": 8.1
+  },
+  {
+    "id": 58,
+    "title": "Promising Young Woman",
+    "genre": "Crime, Drame, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_06/2020/9620292/xl_9620292_156baace.jpg?v=2023-03-30%2021:36:23",
+    "trailer": "https://www.youtube.com/watch?v=7i5kiFDunk8",
+    "rating": 7.4
+  },
+  {
+    "id": 59,
+    "title": "Ma Rainey's Black Bottom",
+    "genre": "Drame, Musique",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_11/2020/10514222/xl_10514222_652a2a83.jpg?v=2022-10-18%2002:40:35",
+    "trailer": "https://www.youtube.com/watch?v=ord7gP151vk",
+    "rating": 7.0
+  },
+  {
+    "id": 60,
+    "title": "Mulan",
+    "genre": "Action, Aventure, Drame",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/4566758/xl_4566758_5b2058ef.jpg?v=2023-02-26%2012:30:18",
+    "trailer": "https://www.youtube.com/watch?v=KK8FHdFluOQ",
+    "rating": 5.7
+  },
+  {
+    "id": 61,
+    "title": "Onward",
+    "genre": "Animation, Aventure, Com\u00e9die",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_05/2020/7146812/xl_7146812_aae4a3cf.jpg?v=2023-12-08%2016:22:21",
+    "trailer": "https://www.youtube.com/watch?v=HxKXiQvyG_o",
+    "rating": 7.4
+  },
+  {
+    "id": 62,
+    "title": "Hamilton",
+    "genre": "Biographie, Drame, Histoire",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_01/2020/5534588/xl_5534588_4162bf72.jpg?v=2020-01-07%2022:02:49",
+    "trailer": "https://www.youtube.com/watch?v=DSCKfXpAGHc",
+    "rating": 8.4
+  },
+  {
+    "id": 63,
+    "title": "Greyhound",
+    "genre": "Action, Drame, Guerre",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_07/2020/6048922/xl_6048922_63ebfe1c.jpg?v=2023-05-26%2016:10:19",
+    "trailer": "https://www.youtube.com/watch?v=eyzxu26-Wqk",
+    "rating": 7.0
+  },
+  {
+    "id": 64,
+    "title": "The Invisible Man",
+    "genre": "Horreur, Myst\u00e8re, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/19_12/2017/7651078/xl_7651078_3f05bb43.jpg?v=2022-01-04%2015:25:08",
+    "trailer": "https://www.youtube.com/watch?v=WO_FJdiY9dA",
+    "rating": 7.1
+  },
+  {
+    "id": 65,
+    "title": "The Trial of the Chicago 7",
+    "genre": "Drame, Histoire, Thriller",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_08/2020/1070874/xl_1070874_24ec2584.jpg?v=2023-06-03%2001:06:08",
+    "trailer": "https://www.youtube.com/watch?v=FVb6EdKDBfU",
+    "rating": 7.8
+  },
+  {
+    "id": 66,
+    "title": "Palm Springs",
+    "genre": "Com\u00e9die, Romance, Sci-Fi",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_12/2019/9484998/xl_9484998_650d2ffa.jpg?v=2022-07-28%2012:59:54",
+    "trailer": "https://www.youtube.com/watch?v=0Uq_5bYGYfM",
+    "rating": 7.4
+  },
+  {
+    "id": 67,
+    "title": "Da 5 Bloods",
+    "genre": "Drame, Guerre",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/20_06/2020/9777644/xl_9777644_da479fbc.jpg?v=2022-10-16%2006:01:42",
+    "trailer": "https://www.youtube.com/watch?v=D5RDTPfsLAI",
+    "rating": 6.5
+  },
+  {
+    "id": 68,
+    "title": "Mank",
+    "genre": "Biographie, Drame",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_01/2020/10618286/xl_10618286_cac22c38.jpg?v=2023-08-18%2009:28:03",
+    "trailer": "https://www.youtube.com/watch?v=6_2aW_u1RSc",
+    "rating": 7.0
+  },
+  {
+    "id": 69,
+    "title": "The Half of It",
+    "genre": "Com\u00e9die, Drame, Romance",
+    "year": 2020,
+    "poster": "https://xl.movieposterdb.com/21_07/2020/9683478/xl_9683478_7467d308.jpg?v=2023-07-19%2006:37:48",
+    "trailer": "https://www.youtube.com/watch?v=B-yhF7IScUE",
+    "rating": 6.9
+  },
+  {
+    "id": 70,
+    "title": "The Assistant",
+    "genre": "Drame",
+    "year": 2019,
+    "poster": "https://xl.movieposterdb.com/21_11/2019/9000224/xl_9000224_25236406.jpg?v=2021-11-11%2009:27:09",
+    "trailer": "https://www.youtube.com/watch?v=8WXQa9861tg",
+    "rating": 6.2
+  },
+  {
+    "id": 71,
+    "title": "1917",
+    "genre": "Drame, Guerre",
+    "year": 2019,
+    "poster": "https://xl.movieposterdb.com/23_02/2020/8579674/xl_1917-movie-poster_a41b1984.jpeg?v=2023-03-11%2012:57:22",
+    "trailer": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
+    "rating": 8.3
+  },
+  {
+    "id": 72,
+    "title": "naz",
+    "genre": "Com",
+    "year": "2023"
+  },
+  {
+    "id": 73,
+    "title": "neww",
+    "genre": "one",
+    "year": "2020"
+  }
+]

@@ -1,0 +1,14 @@
+# .gitignore
+
+# Ignore system files
+.Xauthority
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.local/
+.profile
+.ssh/
+.sudo_as_admin_successful
+.vscode-server/
+.wget-hsts

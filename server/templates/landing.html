@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121b35; 
+            color: #fff;
+        }
+
+        header {
+            background-color: #1f2a48; 
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            cursor: pointer;
+        }
+
+        .header-buttons {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header-buttons button {
+            background-color: #2e3d63; 
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .header-buttons button:hover {
+            background-color: #3f4f7a; 
+        }
+
+        header {
+            background-color: #1f2a48; 
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #2e3d63; 
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #2e3d63; 
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #3f4f7a; 
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        nav {
+            background-color: #2e3d63; 
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #2e3d63; 
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #3f4f7a; 
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Style pour 'Featured Movies'et 'Search' espace */
+        .featured-movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 1em;
+        }
+
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 1em;
+        }
+
+        .movie-card {
+            position: relative;
+            width: 200px; 
+            height: 300px; 
+            perspective: 1000px;
+            margin-bottom: 10px;
+            flex-grow: 1; 
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+
+
+        .movie-card:hover .movie-info {
+            transform: rotateY(0);
+        }
+
+        .movie-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #2e3d63;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .movie-info p {
+            color: #fff;
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        .watch-button {
+            background-color: #4caf50; 
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .watch-button:hover {
+            background-color: #45a049; 
+        }
+        
+        .trailer-button {
+            background-color: #00094f; 
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .trailer-button:hover {
+            background-color: #00094f; 
+        }
+        
+
+        .featured-movies .movie-card {
+            max-width: 200px;
+            background-color: #2e3d63; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .featured-movies .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-movies .movie-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .featured-movies .movie-card p {
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        .genres {
+            margin-top: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .genres a {
+            background-color: #2e3d63; 
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            margin: 0.2em;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .genres a:hover {
+            background-color: #3f4f7a; 
+        }
+
+
+        .search-container {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-form {
+            display: flex;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .search-input {
+            flex: 80%;
+            padding: 0.5em;
+            border: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background-color: #3f4f7a; 
+            color: #fff;
+        }
+
+        .search-button {
+            flex: 20%;
+            background-color: #3f4f7a; 
+            color: #fff;
+            border: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #2e3d63; 
+        }
+
+        /* Style pour la section 'search' */
+        #search {
+            text-align: center;
+        }
+
+        .search-section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+        }
+
+        .search-form-container {
+            display: flex;
+            max-width: 400px;
+            width: 100%;
+            background-color: #2e3d63; 
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input {
+            flex: 80%;
+            padding: 0.5em;
+            border: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background-color: #3f4f7a; 
+            color: #fff;
+        }
+
+        .search-button {
+            flex: 20%;
+            background-color: #3f4f7a; 
+            color: #fff;
+            border: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #2e3d63; 
+        }
+
+        /* Style pour la section 'Add' */
+        #add {
+            text-align: center;
+        }
+
+        .add-section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+        }
+
+        .add-section-container input {
+            max-width: 80%;
+            width: 100%;
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: none;
+            background-color: #fff; 
+            color: #121b35; 
+            border-radius: 4px;
+        }
+
+        .add-section-container button {
+            max-width: 80%;
+            width: 100%;
+            background-color: #fff; 
+            color: #121b35; 
+            border: 1px solid #121b35; 
+            padding: 0.5em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .add-section-container button:hover {
+            background-color: #121b35;
+            color: #fff; 
+        }
+
+
+        /* Style de la 'Delete' section */
+        #delete.search-section-container {
+            justify-content: center;
+        }
+
+        #delete .search-form-container {
+            text-align: center; 
+            margin-top: 2em;
+        }
+
+        #delete .search-form-container button {
+            background-color: #ff3b3b; 
+            color: #fff; 
+            border: none;
+            padding: 0.5em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;  
+        }
+
+        #delete .search-form-container button:hover {
+            background-color: #e63131; 
+        }
+
+
+        #list {
+            text-align: center;
+        }
+
+        .movie-table {
+            width: 80%;
+            margin: 2em auto;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-table th,
+        .movie-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #2e3d63; 
+        }
+
+        .movie-table th {
+            background-color: #2e3d63; 
+            color: #fff;
+        }
+
+        .movie-table tbody tr:hover {
+            background-color: #3f4f7a; 
+        }
+
+        /* Style des étoiles */
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5em;
+        }
+
+        .star {
+            font-size: 1.5em;
+            color: #f0c419; 
+            margin: 0 0.1em;
+        }
+
+        /*LogOut Boutton */
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .logout-button {
+            background-color: #e74c3c; 
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; 
+            transition: background-color 0.3s;
+            margin-left: 1em;
+        }
+
+        .logout-button:hover {
+            background-color: #c0392b; 
+        }
+
+        /* Style des étoiles et button 'Rate' */
+        .rating-form {
+            margin-top: 1em;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .star {
+            font-size: 1.5em;
+            color: #f0c419; 
+            margin: 0 0.1em;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .star.selected {
+            color: #ffd700; 
+        }
+
+        .rate-button {
+            background-color: #3498db; 
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .rate-button:hover {
+            background-color: #2980b9; 
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header-buttons">
+        {% if current_user.is_authenticated %}
+            <div class="user-info">
+                <p>Welcome, {{ current_user.username }}!</p>
+                <a class="logout-button" href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        {% else %}
+            <button onclick="showLoginPage()">Login</button>
+            <button onclick="showSignupPage()">Signup</button>
+        {% endif %}
+    </div>
+
+    <header onclick="showSection('landing')">
+        <h1>CineCast</h1>
+    </header>
+
+    <nav>
+        <button onclick="showSection('landing')">Home</button>
+        <button onclick="showSection('list')">Movie List</button>
+        <button onclick="showSection('search')">Search</button>
+        <button onclick="showSection('add')">Add Movie</button>
+        <button onclick="showSection('delete')">Delete Movie</button>
+    </nav>
+
+    <section id="landing">
+        <h2>Welcome to our Cinematic Adventure!</h2>
+        <p>Dive into the enchanting world of our Movie Library, where each film is a portal to new realms of emotion, excitement, and storytelling brilliance.</p>
+
+        <h3>Discover Movie Magic</h3>
+        <p>Unleash the power of storytelling as our curated collection takes you on a mesmerizing journey through genres, emotions, and unforgettable movies.</p>        
+        
+        <div class="featured-movies">
+            <div class="movie-container">
+
+                {% for movie in movies %}
+                <div class="movie-card">
+                    <img src="{{ movie.poster }}" alt="{{ movie.title }} Poster">
+                    <div class="movie-info">
+                        <h3>{{ movie.title }}</h3>
+                        <p>Genre: {{ movie.genre }}</p>
+                        <!--<p>Year: {{ movie.year }}</p> -->
+                        <div class="rating-stars" data-movie-id="{{ movie.id }}">
+                            <span class="star" data-rating="1">&#9733;</span>
+                            <span class="star" data-rating="2">&#9733;</span>
+                            <span class="star" data-rating="3">&#9733;</span>
+                            <span class="star" data-rating="4">&#9733;</span>
+                            <span class="star" data-rating="5">&#9733;</span>
+                        </div>
+                        <form class="rating-form">
+                            <label for="user-rating">Your Rating:</label>
+                            <select name="user-rating" class="user-rating" required>
+                                <option value="" disabled selected>Select a rating</option>
+                                <option value="1">1 Star</option>
+                                <option value="2">2 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="5">5 Stars</option>
+                            </select>
+                            <button type="button" class="rate-button" onclick="submitRating('{{ movie.id }}', '{{ movie.title }}')">Rate</button>
+                        </form>
+                        <button class="watch-button" onclick="watchButton('{{ movie.trailer }}')">Watch Movie</button>
+                        <button class="trailer-button" onclick="watchTrailer('{{ movie.trailer }}')">Watch Trailer</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    
+
+        <div class="search-container">
+            <form action="/search" method="get" class="search-form">
+                <input type="text" name="query" class="search-input" placeholder="Search for movies...">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+
+        <h3>Explore by Genre</h3>
+        <div class="genres">
+            <a href="/list?genre=action">Action</a>
+            <a href="/list?genre=drama">Drama</a>
+            <a href="/list?genre=sci-fi">Sci-Fi</a>
+            <a href="/list?genre=comedy">Comedy</a>
+            <a href="/list?genre=thriller">Thriller</a>
+            <a href="/list?genre=horror">Horror</a>
+            <a href="/list?genre=romance">Romance</a>
+            <a href="/list?genre=adventure">Adventure</a>
+            <a href="/list?genre=fantasy">Fantasy</a>
+            <a href="/list?genre=mystery">Mystery</a>
+            <a href="/list?genre=animation">Animation</a>
+            <a href="/list?genre=crime">Crime</a>
+            <a href="/list?genre=documentary">Documentary</a>
+            <a href="/list?genre=history">History</a>
+            <a href="/list?genre=western">Western</a>
+            <a href="/list?genre=war">War</a>
+        </div>
+    </section>
+
+    <section id="search" class="hidden">
+        <h2>Search</h2>
+        <div class="search-section-container">
+            <form action="/search" method="get" class="search-form-container">
+                <input type="text" name="query" class="search-input" placeholder="Search for movies...">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="add" class="hidden">
+        <h2>Add a Movie</h2>
+        <div class="add-section-container">
+            <form action="/process_form" method="post" class="add-form-container">
+                <input type="text" name="title" placeholder="Movie Title">
+                <input type="text" name="genre" placeholder="Genre">
+                <input type="text" name="year" placeholder="Release Year">
+                <button type="submit">Add Movie</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="delete" class="hidden">
+        <h2>Delete a Movie</h2>
+        <form action="/delete_movie" method="post" class="delete-form-container"> 
+            <input type="text" name="movie_id" placeholder="Enter Movie ID to delete">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit">Delete Movie</button>
+        </form>
+    </section>
+    
+    <section id="list" class="hidden">
+        <h2>Movie List</h2>
+        <table class="movie-table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for movie in movies %}
+                    <tr>
+                        <td>{{ movie.id }}</td>
+                        <td>{{ movie.title }}</td>
+                        <td>{{ movie.genre }}</td>
+                        <td>{{ movie.year }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+        function showLoginPage() {
+        window.location.replace("/login");
+        }
+
+        function showSignupPage() {
+        window.location.replace("/signup");
+        }
+     
+        function watchTrailer(trailerUrl) {
+        window.open(trailerUrl, '_blank');
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const starContainers = document.querySelectorAll('.rating-stars');
+        starContainers.forEach(container => {
+            const movieId = container.getAttribute('data-movie-id');
+            const stars = container.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.addEventListener('click', () => rateMovie(movieId, star.getAttribute('data-rating')));
+            });
+        });
+    });
+
+    function rateMovie(movieId, rating) {
+        const movieContainer = document.querySelector(`.rating-stars[data-movie-id="${movieId}"]`);
+        const stars = movieContainer.querySelectorAll('.star');
+
+        stars.forEach(star => {
+            const starRating = parseInt(star.getAttribute('data-rating'));
+            star.classList.toggle('selected', starRating <= rating);
+        });
+    }
+
+    function submitRating(movieId, movieTitle) {
+    console.log('submitRating function called');
+    
+    const userRatingSelect = document.querySelector(`.rating-form[data-movie-id="${movieId}"] select.user-rating`);
+    console.log('userRatingSelect:', userRatingSelect);
+
+    const userRating = userRatingSelect.value;
+    console.log('userRating:', userRating);
+
+    if (userRating) {
+        const url = '/rate_movie';
+        const payload = { movieId: movieId, userRating: userRating };
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response from server:', data);
+
+            if (data.success) {
+                console.log('Rating submitted successfully:', data.message);
+            } else {
+                console.error('Failed to submit rating:', data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error submitting rating:', error);
+        });
+    } else {
+        alert('Please select a rating before submitting.');
+    }
+}
+
+    </script>
+</body>
+
+</html>
